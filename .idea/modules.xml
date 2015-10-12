@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../Toy Problems/MS-4-ToyProblems/.idea/MS-4-ToyProblems.iml" filepath="$PROJECT_DIR$/../../../Toy Problems/MS-4-ToyProblems/.idea/MS-4-ToyProblems.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ToyInDjango.iml" filepath="$PROJECT_DIR$/.idea/ToyInDjango.iml" />
     </modules>
   </component>
