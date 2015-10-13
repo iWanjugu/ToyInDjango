@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+    {% load staticfiles %}
         <meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Capitalize Result</title>
         <!-- Bootstrap -->
-        <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href='{% static "Bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+        <link href='{% static "main.css" %}' rel="stylesheet">
     </head>
 
     <body>
@@ -17,7 +19,7 @@
     </nav>
 
     <!--- Body ----->
-    <div class ="row ">
+    <div class ="row capital">
         <div class = "col-md-3"></div>
         <div class = "col-md-6">
             <form action="" method="post" accept-charset="utf-8">
@@ -27,13 +29,14 @@
                 <p>Input String to be Capitalized: </p>
                 <p><input type="text" name="string"><p>
 -->
-                <p><input type="submit" value="Submit Sentence"></p>
+                <p><input class="submit" type="submit" value="Submit"></p>
             </form>
-
-            <form action="" method="get" accept-charset="utf-8">
+            <br>
+            <br>
+            <form class="result" action="" method="get" accept-charset="utf-8">
                   {% csrf_token %}
                     <p>The Capitalized result is:
-                        <span>{{sentence_cap}}</span>
+                        <div>{{sentence_cap}}</div>
                     </p>
             </form>
 

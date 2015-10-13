@@ -28,7 +28,7 @@ def capitalize(request):
 
     return render(request, 'capitalize.html', context)
 
-
+# A function that Capitalizes the first letter of each word
 def capital(str):
     str = str.lower()
     str_split = str.split(" ")
